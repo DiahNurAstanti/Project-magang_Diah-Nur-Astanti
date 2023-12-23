@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 2px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #EF6C33;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.navbar.hidden {
+    transform: translateY(-100%);
+}
+.navbar.transparent {
+    top: -100px;
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+.content {
+    margin-top: 15px; /* Adjust based on the height of your navbar */
+}
+
+section {
+    padding: 50px 0;
+}
+
+.active {
+    border-bottom: 4px solid white;
+}
+.logo{
+width: 45%;
+}
+/* //baner */
+.parallax-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px; /* Adjust the height as needed */
+    z-index: -2;
+}
+
+.parallax {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    transform: skewY(-5deg);
+    overflow: hidden;
+}
+
+#banner-image {
+    filter:brightness(70%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+/* isi content card */
+#cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+
+  /* Style untuk card */
+  .card {
+    flex: 0 1 calc(19% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+    padding: 28px;
+  }
+
+  /* Style untuk tombol select dan tombol sort */
+  select, button {
+    margin: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  /* Style untuk gambar di dalam card */
+  .card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+.controls {
+    display: flex;
+    justify-content:flex-end;
+    margin-right: 100px;
+}
+.show{
+    display: flex;
+    justify-content: start;
+    margin-left: 100px;
+}
+#perPage{
+    width: 90px;
+    border-radius: 99px;
+}
+#sort{
+    width: 100px;
+    border-radius: 99px;
+}

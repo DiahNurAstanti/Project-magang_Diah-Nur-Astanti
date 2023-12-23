@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>suitmedia</title>
+  </head>
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="container">
+        <h1><img class="logo" src="/img/logo-white.png" alt="" /></h1>
+        <nav>
+          <ul>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li class="active"><a href="#ideas">Ideas</a></li>
+            <li><a href="#careers">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="/img/baner.jpg" alt="Banner Image" id="banner-image" />
+      </div>
+      <div class="banner-content">
+        <h1>Ideas</h1>
+        <p>Where all our great things begin</p>
+      </div>
+    </div>
+
+    <div class="content">
+        <div class="show">Showing 1 - 10 of 100 </div>
+      <div class="controls">
+        <div>
+          <label for="perPage">Show per page: </label>
+          <select id="perPage">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="50">50</option>
+          </select>
+        </div>
+        <!-- Tombol Select Sort -->
+        <div>
+          <label for="sort">Sort by: </label>
+          <select id="sort">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+          </select>
+        </div>
+      </div>
+      <!-- List Card Container -->
+      <div id="cardContainer"></div>
+    </div>
+  </body>
+</html>
